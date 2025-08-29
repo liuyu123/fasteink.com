@@ -1,9 +1,11 @@
 <?php
+require './vendor/autoload.php';
+
 use Etsy\OAuth\Client;
 
 $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
 
-$client = new Etsy\OAuth\Client($client_id);
+$client = new Client($client_id);
 
 $redirect_uri = 'https://fasteink.com/etsy/callback.php';
 $scopes = \Etsy\Utils\PermissionScopes::ALL_SCOPES;
