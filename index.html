@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasteink - Manage orders, print shipping labels, track inventory – all within OMS hub.</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./icon (2).png" type="image/png" sizes="32x32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fasteink</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#process" class="nav-link">Process</a>
+                    <a href="#aboutapi" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Expect</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+					Fasteink
+                    <!-- Professional -->
+                    <!-- <span class="highlight">Etsy API</span> -->
+                    <span class="highlight">OMS</span>
+                    Integration Services
+                </h1>
+                <p class="hero-subtitle">
+                    Manage orders, print shipping labels, track inventory – all within OMS hub.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Get Started Today
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        View Our Features
+                    </button>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Secure OAuth 2.0 Authentication</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Real-time Data Sync</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Scalable & Reliable API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- about-api -->
+	<section class="about-api" id="aboutapi">
+	  <div class="container">
+		<div class="content">
+		  <div class="text-block">
+			<h3 class="sub-heading">ABOUT FASTEINK</h3>
+			<h2 class="main-heading">Boost Your Sales with Fasteink OMS</h2>
+			<p>
+			Fasteink is a powerful third-party order and inventory management platform designed for online sellers. It helps sellers streamline operations, 
+			manage multiple sales channels in one place, and scale their business efficiently. 
+			With Fasteink, sellers can automate repetitive tasks, sync inventory, and gain actionable insights to improve performance.
+			</p>
+			
+			<ul class="features">
+			  <li>📦 Real-time inventory tracking</li>
+			  <li>📊 Monitor seasonal & occasional trends</li>
+			  <li>📈 Fetch data for marketing & sales strategy</li>
+			  <li>🔮 Estimate demand based on orders</li>
+			</ul>
+		  </div>
+		  <div class="image-block">
+			<img src="./4.png" alt="Fasteink Etsy API Integration">
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+<!-- features Management -->	
+<section class="features" id="features">
+<div class="container">
+  <h2 class="features-title">Features</h2>
+  <nav class="features-nav">
+    <a href="#" data-tab="order" class="active">1 Order Management</a>
+    <a href="#" data-tab="shipping">2 Shipping Management</a>
+    <a href="#" data-tab="inventory">3 Inventory Management</a>
+  </nav>
+
+  <!-- Order Management -->
+  <div class="feature-item active" id="order">
+    <div class="feature-content">
+      <img src="2.png" alt="Order Management Dashboard">
+      <div class="feature-text">
+        <h3>Order Management within OMS hub</h3>
+        <p>
+          Manage orders from all your sales channels in a single dashboard. Generate and print pre-filled invoices, delivery notes, 
+		  return forms and picking lists. Automatically filter, tag orders and assign them to your team members for fulfillment.
+        </p>
+		<ul>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Manage orders from every sales channel</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Set up automation rules for repetitive tasks</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Manage orders from every sales channel</span></li>
+		
+		</ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shipping Management -->
+  <div class="feature-item" id="shipping">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h3>Shipping Management</h3>
+        <p>
+          Quickly ship hundreds of orders in a matter of few clicks, no matter the sales channel. Setup automation rules and assign shipping services,
+		  tag and assign them to your staff based on criteria of your choice. Save on costs by using our discounted shipping rates with USPS.
+        </p>
+		<ul>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span>Shipping Automation</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Automatic Weight Calculation</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Order Merging</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> Discounted USPS Rates</span></li>
+			<li class="li-list"><div class="kd-icon-wrapper icon-circle" style="background-color: #12d864;"><i class="fas fa-check" style="color: #ffffff;"></i></div> <span> More than 12 different carriers available</span></li>
+		
+		</ul>
+      </div>
+      <img src="3.png" alt="Shipping Management Dashboard">
+    </div>
+  </div>
+
+  <!-- Inventory Management -->
+  <div class="feature-item" id="inventory">
+    <div class="feature-content">
+      <img src="Simple-Product-Management.png" alt="Inventory Management Dashboard">
+      <div class="feature-text">
+        <h3>Inventory Management</h3>
+        <p>
+          Keep track of stock levels across warehouses, automate low-stock alerts, 
+          and sync product availability with your sales channels to prevent overselling.
+        </p>
+      </div>
+    </div>
+  </div>
+ </div> 
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Integration Services</h2>
+                <p>Comprehensive API solutions designed to streamline your e-commerce operations and maximize your marketplace potential.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-time API Integration</h3>
+                    <p>Seamless connection across sales channels with real-time synchronization for inventory, orders, and customer information.</p>
+                    <ul class="service-features">
+                        <li>Live inventory updates</li>
+                        <li>Order management</li>
+                        <li>Customer data sync</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Migration & Setup</h3>
+                    <p>Complete migration of your existing product data, customer information, and order history to your sales platform.</p>
+                    <ul class="service-features">
+                        <li>Bulk product upload</li>
+                        <li>Customer data transfer</li>
+                        <li>Order history migration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Multi-Channel Management</h3>
+                    <p>Manage multiple stores or marketplaces with centralized inventory and order management.</p>
+                    <ul class="service-features">
+                        <li>Cross-platform sync</li>
+                        <li>Unified dashboard</li>
+                        <li>Inventory optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Comprehensive analytics dashboard with detailed insights into your store performance and sales metrics.</p>
+                    <ul class="service-features">
+                        <li>Sales analytics</li>
+                        <li>Performance metrics</li>
+                        <li>Custom reports</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Enterprise-grade security measures and full compliance with data protection standards.</p>
+                    <ul class="service-features">
+                        <li>Data encryption</li>
+                        <li>GDPR compliance</li>
+                        <li>API security</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Custom Development</h3>
+                    <p>Tailored solutions for unique business requirements with custom API endpoints and specialized functionality.</p>
+                    <ul class="service-features">
+                        <li>Custom features</li>
+                        <li>API customization</li>
+                        <li>Workflow automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- about-api -->
+	<!-- <section class="about-api" id="aboutawhy"> -->
+	  <!-- <div class="container"> -->
+		<!-- <div class="content"> -->
+		  <!-- <div class="text-block"> -->
+			<!-- <h3 class="sub-heading">Why Etsy Marketplace API Integration</h3> -->
+			<!-- <h2 class="main-heading">Streamlining the Success with Etsy API Integration Service</h2> -->
+			<!-- <p> -->
+				<!-- Etsy mainly focuses on handcrafted and artistic products. Most of the sellers on Etsy are in-house manufacturers as well and hence burdened to manage the supply restocking,  -->
+				<!-- inventory, and shipment altogether. Etsy API Integration solution simplifies the process for sellers with real-time updates on inventory levels, order status, listing details, and more. -->
+			<!-- </p> -->
+			<!-- <p> -->
+				<!-- Getting started with Etsy is not that complex initially. Still, as the sales ramp up and you start catering to a larger audience and plan to scale,  -->
+				<!-- you might face significant challenges due to a lack of adequate store management features.  -->
+				<!-- With Etsy API integration, sellers can automate the core processes, sync inventory data,  -->
+				<!-- and work on achieving higher operational efficiency. Sellers can easily get access to features like: -->
+			<!-- </p> -->
+			<!-- <ul class="features"> -->
+			  <!-- <li>Automated Inventory Management</li> -->
+			  <!-- <li>Seamless Order Processing</li> -->
+			  <!-- <li>Improved Customer Experience</li> -->
+			  <!-- <li>Dynamic Pricing & Promotions</li> -->
+			  <!-- <li>Advanced Sales Analytics</li> -->
+			<!-- </ul> -->
+		  <!-- </div> -->
+		  <!-- <div class="image-block"> -->
+			<!-- <img src="./Streamlining-the-Success-with-Etsy-API-Integration-Service.webp" alt="Fasteink Etsy API Integration"> -->
+		  <!-- </div> -->
+		<!-- </div> -->
+	  <!-- </div> -->
+	<!-- </section> -->
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>See How Fasteink Works</h2>
+                <!-- <p>A proven methodology that ensures successful Etsy API integration with minimal disruption to your business operations</p> -->
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Connect</h3>
+                        <p>Multiorders integrates with the most popular shopping carts, marketplaces and carriers - find yours and connect in a matter of minutes.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Import</h3>
+                        <p>After connecting your stores, import your products and orders and start managing them from a single dashboard.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Merge & Bundle</h3>
+                        <p>If you are selling across multiple sales channels, merge your stock and dashboard. Once an order is made on one sales channel, Multiorders will automatically deduct the stock from the others.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h3>Watch orders gather</h3>
+                        <p>After connecting your sales channels, all your incoming orders will appear in a single place. Tag, filter, organize your orders, and check their status.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Automate your Workflow</h3>
+                        <p>Set up automation rules to automatically select carrier, service and packaging for the incoming orders, automatically tag and assign orders for your staff members.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h3>Re-order your items</h3>
+                        <p>Get low stock notifications and automatically generate purchase orders to reorder items from your suppliers.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+				<div class="process-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h3>Email order documents to your customers</h3>
+                        <p>Generate pre-filled invoices, return forms and delivery notes and email them straight to your customers.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+				<div class="process-step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h3>Print labels in seconds</h3>
+                        <p>Print labels individually or in batches up to 500 directly from Multiorders.</p>
+                        <span class="step-duration"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <!-- <section id="pricing" class="pricing"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="section-header"> -->
+                <!-- <h2>Transparent Pricing</h2> -->
+                <!-- <p>Choose the perfect plan for your business needs. All plans include our comprehensive integration services and ongoing support.</p> -->
+            <!-- </div> -->
+            <!-- <div class="pricing-grid"> -->
+                <!-- <div class="pricing-card"> -->
+                    <!-- <h3>Starter</h3> -->
+                    <!-- <div class="price">$499</div> -->
+                    <!-- <p class="price-description">Perfect for small businesses getting started with Etsy integration</p> -->
+                    <!-- <ul class="pricing-features"> -->
+                        <!-- <li><i class="fas fa-check"></i> Basic API integration setup</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Product catalog sync</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Order management</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Email support</li> -->
+                        <!-- <li><i class="fas fa-check"></i> 30-day warranty</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Basic documentation</li> -->
+                    <!-- </ul> -->
+                    <!-- <button class="btn btn-outline">Get Started</button> -->
+                <!-- </div> -->
+                <!-- <div class="pricing-card popular"> -->
+                    <!-- <div class="popular-badge"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- Most Popular -->
+                    <!-- </div> -->
+                    <!-- <h3>Professional</h3> -->
+                    <!-- <div class="price">$1,299</div> -->
+                    <!-- <p class="price-description">Ideal for growing businesses needing comprehensive integration</p> -->
+                    <!-- <ul class="pricing-features"> -->
+                        <!-- <li><i class="fas fa-check"></i> Advanced API integration</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Multi-channel management</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Real-time inventory sync</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Custom reporting dashboard</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Priority phone & email support</li> -->
+                        <!-- <li><i class="fas fa-check"></i> 90-day warranty</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Training sessions included</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Performance optimization</li> -->
+                    <!-- </ul> -->
+                    <!-- <button class="btn btn-primary">Most Popular</button> -->
+                    <!-- <div class="savings-badge"> -->
+                        <!-- <i class="fas fa-bolt"></i> -->
+                        <!-- Save 40% vs individual services -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="pricing-card"> -->
+                    <!-- <h3>Enterprise</h3> -->
+                    <!-- <div class="price">Custom</div> -->
+                    <!-- <p class="price-description">Tailored solutions for large-scale operations and unique requirements</p> -->
+                    <!-- <ul class="pricing-features"> -->
+                        <!-- <li><i class="fas fa-check"></i> Custom API development</li> -->
+                        <!-- <li><i class="fas fa-check"></i> White-label solutions</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Advanced analytics & BI</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Dedicated account manager</li> -->
+                        <!-- <li><i class="fas fa-check"></i> 24/7 premium support</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Unlimited revisions</li> -->
+                        <!-- <li><i class="fas fa-check"></i> SLA guarantees</li> -->
+                        <!-- <li><i class="fas fa-check"></i> Custom integrations</li> -->
+                        <!-- <li><i class="fas fa-check"></i> On-site consultation</li> -->
+                    <!-- </ul> -->
+                    <!-- <button class="btn btn-gradient">Contact Sales</button> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="pricing-footer"> -->
+                <!-- <p>All plans include free consultation and project scoping</p> -->
+                <!-- <div class="guarantees"> -->
+                    <!-- <span><i class="fas fa-check"></i> Money-back guarantee</span> -->
+                    <!-- <span><i class="fas fa-check"></i> No hidden fees</span> -->
+                    <!-- <span><i class="fas fa-check"></i> Flexible payment terms</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="section-header"> -->
+                <!-- <h2>What Our Clients Say</h2> -->
+                <!-- <p>Don't just take our word for it. Here's what successful businesses say about our Etsy API integration services.</p> -->
+            <!-- </div> -->
+            <!-- <div class="testimonials-grid"> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sarah Johnson" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>Sarah Johnson</h4> -->
+                            <!-- <p>CEO, Artisan Crafts Co.</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "The Etsy API integration transformed our business. We went from manually updating inventory to having everything sync automatically. Sales increased by 150% in just 3 months!" -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- 150% increase in sales -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Michael Chen" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>Michael Chen</h4> -->
+                            <!-- <p>Founder, Vintage Treasures</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "Professional service from start to finish. The team understood our complex requirements and delivered a solution that exceeded expectations. The ongoing support is exceptional." -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- 99.9% uptime achieved -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Emily Rodriguez" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>Emily Rodriguez</h4> -->
+                            <!-- <p>Operations Manager, Handmade Haven</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "We were struggling with managing inventory across multiple platforms. The integration solution streamlined everything and saved us 20+ hours per week on manual tasks." -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- 20+ hours saved weekly -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=400" alt="David Kim" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>David Kim</h4> -->
+                            <!-- <p>Owner, Creative Studios</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "The custom reporting dashboard gives us insights we never had before. Making data-driven decisions has improved our profit margins significantly." -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- 35% improvement in margins -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lisa Thompson" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>Lisa Thompson</h4> -->
+                            <!-- <p>Director, Boutique Collections</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "Outstanding technical expertise and customer service. The integration was completed on time and within budget. Highly recommend for any serious Etsy seller." -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- Project completed on time -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="testimonial-card"> -->
+                    <!-- <div class="quote-icon"> -->
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-header"> -->
+                        <!-- <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Robert Garcia" class="testimonial-avatar"> -->
+                        <!-- <div class="testimonial-info"> -->
+                            <!-- <h4>Robert Garcia</h4> -->
+                            <!-- <p>CEO, Eco Friendly Goods</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="testimonial-rating"> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                        <!-- <i class="fas fa-star"></i> -->
+                    <!-- </div> -->
+                    <!-- <p class="testimonial-content"> -->
+                        <!-- "The scalability of the solution has been incredible. As we've grown from 100 to 10,000+ products, the system has handled everything seamlessly." -->
+                    <!-- </p> -->
+                    <!-- <div class="testimonial-result"> -->
+                        <!-- 10,000+ products managed -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="testimonials-cta"> -->
+                <!-- <div class="cta-card"> -->
+                    <!-- <h3>Trusted by retailers and makers worldwide</h3> -->
+                    <!-- <p>Ready to transform your Etsy business with professional API integration?</p> -->
+                    <!-- <button class="btn btn-primary" onclick="scrollToSection('contact')"> -->
+                        <!-- Start Your Integration Today -->
+                    <!-- </button> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
+	
+	<!-- Testimonials Section (replaced with Sample Outcomes) -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Sample Outcomes You Can Expect</h2>
+      <p class="muted">The following are illustrative outcomes based on pilot projects and internal tests — presented as examples for demonstration only.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-sync-alt" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Automated inventory sync</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Automate listing and stock updates across platforms to prevent overselling and reduce manual updates. (example)</p>
+        <div class="testimonial-result">Eliminate manual updates — example</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-truck" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Faster order processing</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Automated workflows route orders to fulfillment systems reducing manual handling time. (example)</p>
+        <div class="testimonial-result">Reduce processing time — example</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-chart-line" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Consolidated reporting</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Unified dashboards for sales, fees and returns with exportable reports for quick analysis. (example)</p>
+        <div class="testimonial-result">Single dashboard — example</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-user-clock" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Operational time savings</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Shift repetitive tasks to automated jobs so staff can focus on growth and product development. (example)</p>
+        <div class="testimonial-result">Save staff hours — example</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-shield-alt" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Secure token handling</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Access tokens stored encrypted and refresh tokens rotated to reduce risk of unauthorized access. (example)</p>
+        <div class="testimonial-result">AES-256 at rest — example</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="testimonial-card">
+        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testimonial-header">
+          <div class="testimonial-avatar" style="display:flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;">
+            <i class="fas fa-cogs" style="font-size:1.1rem;color:#2563EB;"></i>
+          </div>
+          <div class="testimonial-info">
+            <h4>Scalable product management</h4>
+            <p>Example outcome</p>
+          </div>
+        </div>
+        <div class="testimonial-rating" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-content">Handle large catalogs without manual effort; bulk operations and queuing for large imports. (example)</p>
+        <div class="testimonial-result">Scale to thousands — example</div>
+      </div>
+    </div>
+
+    <div class="testimonials-cta">
+      <div class="cta-card">
+        <h3>Ready to see similar outcomes for your shop?</h3>
+        <p>Apply for a free pilot integration and get a short report showing potential impact for your store.</p>
+        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+          Start a Pilot
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started Today</h2>
+                <p>Ready to transform your Etsy business? Contact us for a free consultation and custom integration proposal tailored to your needs.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email Us</h4>
+                                    <p>support@fasteink.com</p>
+                                    <span>We reply within 24 hours</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Call Us</h4>
+                                    <p>+1 (347) 248-6375</p>
+                                    <span>Mon-Fri 9AM-6PM EST</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Visit Us</h4>
+                                    <p>124 CEMETARY RD GASTONIA</p>
+                                    <span>NC 28056</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="consultation-offer">
+                            <h4>Free Consultation Available</h4>
+                            <p>Schedule a complimentary 30-minute consultation to discuss your integration needs and get expert recommendations.</p>
+                            <!-- <button class="btn btn-primary">Schedule Now</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <h3>Request a Quote</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service">Service Needed *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="api-integration">API Integration Setup</option>
+                                        <option value="data-migration">Data Migration</option>
+                                        <option value="multi-channel">Multi-Channel Management</option>
+                                        <option value="custom-development">Custom Development</option>
+                                        <option value="analytics">Analytics & Reporting</option>
+                                        <option value="enterprise">Enterprise Solutions</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="budget">Budget Range</label>
+                                    <select id="budget" name="budget">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-1000">Under $1,000</option>
+                                        <option value="1000-5000">$1,000 - $5,000</option>
+                                        <option value="5000-10000">$5,000 - $10,000</option>
+                                        <option value="10000-25000">$10,000 - $25,000</option>
+                                        <option value="25000-plus">$25,000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project, current setup, and integration requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                        <div class="form-success" id="form-success">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>Thank You!</h4>
+                            <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fasteink</span>
+                    </div>
+                    <p>Manage orders, print shipping labels, track inventory – all within OMS hub.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@fasteink.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (347) 248-6375</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>124 CEMETARY RD GASTONIA, NC 28056</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+						Company: Vogue Vibes LLC
+                        <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">API Integration</a></li>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">Data Migration</a></li>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">Multi-Channel Management</a></li>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">Custom Development</a></li>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">Analytics & Reporting</a></li>
+                            <li><a href="#" onclick="scrollToSection('services'); return false;">Support & Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Company</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">About Us</a></li> -->
+                            <!-- <li><a href="#">Our Team</a></li> -->
+                            <!-- <li><a href="#">Careers</a></li> -->
+                            <!-- <li><a href="#">Press Kit</a></li> -->
+                            <!-- <li><a href="#">Contact</a></li> -->
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Resources</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">Documentation</a></li> -->
+                            <!-- <li><a href="#">API Reference</a></li> -->
+                            <!-- <li><a href="#">Case Studies</a></li> -->
+                            <!-- <li><a href="#">Best Practices</a></li> -->
+                            <!-- <li><a href="#">FAQs</a></li> -->
+                            <!-- <li><a href="#">Status Page</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                             <li><a href="./policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms of Service</a></li>
+                            <li><a href="./dataprocessing.html">Data Processing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 Fasteink. All rights reserved.
+                    </div>
+                    <div class="footer-badges">
+                        <span>🔒 SSL Secured</span>
+                        <!-- <span>✅ GDPR Compliant</span> -->
+                        <!-- <span>⚡ 99.9% Uptime</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

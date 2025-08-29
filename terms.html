@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasteink - Manage orders, print shipping labels, track inventory – all within OMS hub.</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./icon (2).png" type="image/png" sizes="32x32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+	.header {
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	}
+	.header .logo {
+		color: #2563EB;
+	}
+	.header .nav-link{
+		color: #6B7280;
+	}
+	 body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      <!-- max-width: 900px; -->
+      margin: 0 auto;
+      <!-- padding: 20px; -->
+      background: #f9f9f9;
+    }
+    .page-content h1,.page-content h2,.page-content h3 {
+      color: #213163;
+    }
+    .page-content h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #213163;
+      padding-bottom: 10px;
+    }
+    .page-content h2 {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+    .page-content h3 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .page-content ul {
+      margin: 10px 0 10px 20px;
+    }
+    .page-content p {
+      margin: 10px 0;
+    }
+    .page-content .section {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+	</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fasteink</span>
+                </div>
+                <nav class="nav" id="nav">
+					<a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html#services" class="nav-link">Services</a>
+                    <a href="./index.html#process" class="nav-link">Process</a>
+                    <a href="./index.html#aboutapi" class="nav-link">About</a>
+                    <a href="./index.html#testimonials" class="nav-link">Expect</a>
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+	<section id="services" class="services">
+  <div class="container page-content">
+    <h1>Terms of Service – Fasteink</h1>
+    <p><strong>Effective Date:</strong> March 20, 2025</p>
+    <p>By accessing or using Fasteink (“we”, “our”, “us”), you agree to comply with and be bound by the following terms:</p>
+
+    <div class="section">
+      <h2>1. Use of Service</h2>
+      <ul>
+        <li>Fasteink provides tools for API integration, inventory synchronization, and order management with supported e-commerce platforms.</li>
+        <li>You must create an account to access certain features.</li>
+        <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Eligibility</h2>
+      <ul>
+        <li>You must be at least 18 years old or have legal capacity in your jurisdiction.</li>
+        <li>By using our services, you represent that you have authority to manage the store(s) you connect.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Data & Privacy</h2>
+      <ul>
+        <li>Your store data (listings, orders, and metadata) will be collected, stored, and processed as described in our <a href="./policy.html">Privacy Policy</a>.</li>
+        <li>You may revoke access or disconnect your account at any time through the dashboard.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Account Responsibilities</h2>
+      <ul>
+        <li>You are responsible for all activity conducted under your account.</li>
+        <li>Notify us immediately of any unauthorized use.</li>
+        <li>You may not use our services for unlawful purposes or violate any applicable platform's terms of use.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Service Availability</h2>
+      <ul>
+        <li>Fasteink will make reasonable efforts to provide continuous service, but we do not guarantee uninterrupted or error-free operation.</li>
+        <li>Maintenance, updates, or outages may occur without prior notice.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. Fees & Payments</h2>
+      <ul>
+        <li>Certain features may require payment.</li>
+        <li>All fees are non-refundable unless specified.</li>
+        <li>You agree to pay all applicable fees according to the plan selected.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Intellectual Property</h2>
+      <ul>
+        <li>All content, logos, and software are the property of Fasteink or our licensors.</li>
+        <li>You may not copy, reproduce, or distribute our content without permission.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>8. Termination</h2>
+      <ul>
+        <li>We may suspend or terminate your account for violation of terms or illegal activity.</li>
+        <li>You may also terminate your account at any time, subject to outstanding obligations.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>9. Limitation of Liability</h2>
+      <p>Fasteink is not liable for indirect, incidental, or consequential damages. Our total liability is limited to the fees paid by you in the preceding 12 months.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Changes to Terms</h2>
+      <p>We may update these terms periodically. Changes will be posted with the effective date, and continued use of our services constitutes acceptance of the updated terms.</p>
+    </div>
+
+  </div>
+</section>
+<!-- <section id="services" class="services"> -->
+	<!-- <div class="container page-content"> -->
+	 <!-- <h1>Terms of Service – Fasteink</h1> -->
+  <!-- <p><strong>Effective Date:</strong> August 20, 2025</p> -->
+  <!-- <p>By accessing or using Fasteink (“we”, “our”, “us”), you agree to comply with and be bound by the following terms:</p> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>1. Use of Service</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Fasteink provides tools for Etsy API integration, inventory synchronization, and order management.</li> -->
+      <!-- <li>You must create an account to access certain features.</li> -->
+      <!-- <li>You are responsible for maintaining the confidentiality of your account credentials.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>2. Eligibility</h2> -->
+    <!-- <ul> -->
+      <!-- <li>You must be at least 18 years old or have legal capacity in your jurisdiction.</li> -->
+      <!-- <li>By using our services, you represent that you have authority to manage the Etsy shop(s) you connect.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>3. Data & Privacy</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Your Etsy data (shop listings, orders, and metadata) will be collected, stored, and processed as described in our <a href="./policy.html">Privacy Policy</a>.</li> -->
+      <!-- <li>You may revoke access or disconnect your Etsy account at any time.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>4. Account Responsibilities</h2> -->
+    <!-- <ul> -->
+      <!-- <li>You are responsible for all activity conducted under your account.</li> -->
+      <!-- <li>Notify us immediately of any unauthorized use.</li> -->
+      <!-- <li>You may not use our services for unlawful purposes or violate Etsy’s terms.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>5. Service Availability</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Fasteink will make reasonable efforts to provide continuous service, but we do not guarantee uninterrupted or error-free operation.</li> -->
+      <!-- <li>Maintenance, updates, or outages may occur without prior notice.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>6. Fees & Payments</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Certain features may require payment.</li> -->
+      <!-- <li>All fees are non-refundable unless specified.</li> -->
+      <!-- <li>You agree to pay all applicable fees according to the plan selected.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>7. Intellectual Property</h2> -->
+    <!-- <ul> -->
+      <!-- <li>All content, logos, and software are the property of Fasteink or our licensors.</li> -->
+      <!-- <li>You may not copy, reproduce, or distribute our content without permission.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>8. Termination</h2> -->
+    <!-- <ul> -->
+      <!-- <li>We may suspend or terminate your account for violation of terms or illegal activity.</li> -->
+      <!-- <li>You may also terminate your account at any time, subject to outstanding obligations.</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>9. Limitation of Liability</h2> -->
+    <!-- <p>Fasteink is not liable for indirect, incidental, or consequential damages. Our total liability is limited to the fees paid by you in the preceding 12 months.</p> -->
+  <!-- </div> -->
+
+	<!-- </div> -->
+<!-- </section>	 -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fasteink</span>
+                    </div>
+                    <p>Manage orders, print shipping labels, track inventory – all within OMS hub.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@fasteink.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (347) 248-6375</span>
+                        </div>
+                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>124 CEMETARY RD GASTONIA, NC 28056</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+						Company: Vogue Vibes LLC
+                        <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="./index.html#services">API Integration</a></li>
+                            <li><a href="./index.html#services">Data Migration</a></li>
+                            <li><a href="./index.html#services">Multi-Channel Management</a></li>
+                            <li><a href="./index.html#services">Custom Development</a></li>
+                            <li><a href="./index.html#services">Analytics & Reporting</a></li>
+                            <li><a href="./index.html#services">Support & Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Company</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">About Us</a></li> -->
+                            <!-- <li><a href="#">Our Team</a></li> -->
+                            <!-- <li><a href="#">Careers</a></li> -->
+                            <!-- <li><a href="#">Press Kit</a></li> -->
+                            <!-- <li><a href="#">Contact</a></li> -->
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Resources</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">Documentation</a></li> -->
+                            <!-- <li><a href="#">API Reference</a></li> -->
+                            <!-- <li><a href="#">Case Studies</a></li> -->
+                            <!-- <li><a href="#">Best Practices</a></li> -->
+                            <!-- <li><a href="#">FAQs</a></li> -->
+                            <!-- <li><a href="#">Status Page</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="./policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms of Service</a></li>
+                            <!-- <li><a href="#">Cookie Policy</a></li> -->
+                            <li><a href="./dataprocessing.html">Data Processing</a></li>
+                            <!-- <li><a href="#">GDPR Compliance</a></li> -->
+                            <!-- <li><a href="#">Security</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 Fasteink. All rights reserved.
+                    </div>
+                    <div class="footer-badges">
+                        <span>🔒 SSL Secured</span>
+                        <!-- <span>✅ GDPR Compliant</span> -->
+                        <!-- <span>⚡ 99.9% Uptime</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

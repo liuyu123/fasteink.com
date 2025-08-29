@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasteink -Manage orders, print shipping labels, track inventory – all within OMS hub.</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./icon (2).png" type="image/png" sizes="32x32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+	.header {
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	}
+	.header .logo {
+		color: #2563EB;
+	}
+	.header .nav-link{
+		color: #6B7280;
+	}
+	 body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      <!-- max-width: 900px; -->
+      margin: 0 auto;
+      <!-- padding: 20px; -->
+      background: #f9f9f9;
+    }
+    .page-content h1,.page-content h2,.page-content h3 {
+      color: #213163;
+    }
+    .page-content h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #213163;
+      padding-bottom: 10px;
+    }
+    .page-content h2 {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+    .page-content h3 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .page-content ul {
+      margin: 10px 0 10px 20px;
+    }
+    .page-content p {
+      margin: 10px 0;
+    }
+    .page-content .section {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+	</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fasteink</span>
+                </div>
+                <nav class="nav" id="nav">
+					<a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html#services" class="nav-link">Services</a>
+                    <a href="./index.html#process" class="nav-link">Process</a>
+                    <a href="./index.html#aboutapi" class="nav-link">About</a>
+                    <a href="./index.html#testimonials" class="nav-link">Expect</a>
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+	<section id="services" class="services">
+  <div class="container page-content">
+    <h1>How to manage orders using “In progress” order status</h1>
+	<div class="section">
+      <h3>When should you use the “In progress” order status?</h3>
+	  <p>Let’s say your courier arrives on Monday to pick up your orders, but you want the packages with labels prepared earlier on Friday before the weekend. </p>
+	  <p>Instead of changing the status of your orders to “Shipped”, you can change it to “In Progress” which allows you to generate and print shipping labels without sending tracking details and updating order status to “Shipped” on your stores.</p>
+	  <p>When the courier picks up your packages on Monday, only then you can dispatch the orders in Fasteink. This sends tracking information to your stores, updates order status to “Shipped” in Fasteink and your stores, and notifies the customer that his order has been shipped.
+
+ </p>
+    </div> 
+	<div class="section">
+      <h3>How to enable/disable the “In progress” order status?</h3>
+	  <p>To enable or disable “In progress” order status follow the steps below:</p>	
+	  <p>1.Go to Settings - Shipping:</p>	
+      <img src="./order/1.png">
+	  <p> 2. Scroll down to the very bottom of the page and select a checkbox to enable the “In  progress” tab or uncheck it to disable it:</p>
+	  <img src="./order/2.png">
+	  <p> 3. When the “In Progress” order status bar is enabled, it should appear among the other order statuses on the top menu bar:</p>
+	  <img src="./order/3.png">
+    </div> 
+	<div class="section">
+      <h3>How to use “In Progress” status when shipping orders?</h3>
+	  <p>Let’s try to ship an order once the “In progress” status is enabled.</p>	
+	  <p>1.Select an order you want to ship and press the Ship Order button:</p>	
+      <img src="./order/4.png">
+	  <p> 2.  Select the option you want to ship your order with, in this case, Royal Mail:</p>
+	  <img src="./order/5.png">
+	  <p> 3. Fill in package details, select shipping service, and click on the Buy Shipments button:</p>
+	  <img src="./order/6.png">
+	  <p> 4.Click on Prepare Shipping Labels to have your label generated:</p>
+	  <img src="./order/7.png">
+	  <p> 5.After the label is generated, the order status changes from New to In progress and you can now find your order under the “In progress” tab. At this point no update has been sent to your store, only the label has been generated. </p>
+	  <p> When the courier arrives to pick up your package the next day, you can then click on Dispatch to have your order shipped, tracking number sent and status updated on your online store. </p>
+	  <img src="./order/8.png">
+	  <p>After clicking Dispatch the order status automatically changes to Shipped.</p>
+    </div> 
+
+    
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fasteink</span>
+                    </div>
+                    <p>Manage orders, print shipping labels, track inventory – all within OMS hub.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@fasteink.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (347) 248-6375</span>
+                        </div>
+                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>124 CEMETARY RD GASTONIA, NC 28056</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+						Company: Vogue Vibes LLC
+                        <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="./index.html#services">API Integration</a></li>
+                            <li><a href="./index.html#services">Data Migration</a></li>
+                            <li><a href="./index.html#services">Multi-Channel Management</a></li>
+                            <li><a href="./index.html#services">Custom Development</a></li>
+                            <li><a href="./index.html#services">Analytics & Reporting</a></li>
+                            <li><a href="./index.html#services">Support & Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Company</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">About Us</a></li> -->
+                            <!-- <li><a href="#">Our Team</a></li> -->
+                            <!-- <li><a href="#">Careers</a></li> -->
+                            <!-- <li><a href="#">Press Kit</a></li> -->
+                            <!-- <li><a href="#">Contact</a></li> -->
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Resources</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">Documentation</a></li> -->
+                            <!-- <li><a href="#">API Reference</a></li> -->
+                            <!-- <li><a href="#">Case Studies</a></li> -->
+                            <!-- <li><a href="#">Best Practices</a></li> -->
+                            <!-- <li><a href="#">FAQs</a></li> -->
+                            <!-- <li><a href="#">Status Page</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="./policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms of Service</a></li>
+                            <li><a href="./dataprocessing.html">Data Processing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 Fasteink. All rights reserved. 
+                    </div>
+                    <div class="footer-badges">
+                        <span>🔒 SSL Secured</span>
+                        <!-- <span>✅ GDPR Compliant</span> -->
+                        <!-- <span>⚡ 99.9% Uptime</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

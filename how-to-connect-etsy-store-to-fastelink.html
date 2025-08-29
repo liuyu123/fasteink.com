@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasteink -Manage orders, print shipping labels, track inventory – all within OMS hub.</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./icon (2).png" type="image/png" sizes="32x32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+	.header {
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	}
+	.header .logo {
+		color: #2563EB;
+	}
+	.header .nav-link{
+		color: #6B7280;
+	}
+	 body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      <!-- max-width: 900px; -->
+      margin: 0 auto;
+      <!-- padding: 20px; -->
+      background: #f9f9f9;
+    }
+    .page-content h1,.page-content h2,.page-content h3 {
+      color: #213163;
+    }
+    .page-content h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #213163;
+      padding-bottom: 10px;
+    }
+    .page-content h2 {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+    .page-content h3 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .page-content ul {
+      margin: 10px 0 10px 20px;
+    }
+    .page-content p {
+      margin: 10px 0;
+    }
+    .page-content .section {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+	</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fasteink</span>
+                </div>
+                <nav class="nav" id="nav">
+					<a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html#services" class="nav-link">Services</a>
+                    <a href="./index.html#process" class="nav-link">Process</a>
+                    <a href="./index.html#aboutapi" class="nav-link">About</a>
+                    <a href="./index.html#testimonials" class="nav-link">Expect</a>
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+	<section id="services" class="services">
+  <div class="container page-content">
+    <h1>Connecting Etsy to Fasteink</h1>
+    <!-- <p><strong>Effective Date:</strong> March 20, 2025</p> -->
+    <!-- <p>Fasteink (“we”, “our”, “us”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when using our website, products, and services.</p> -->
+
+    <div class="section">
+      <h3>1. Go to Integrations and click on Etsy integration to open:</h3>
+      <img src="./step1.png">
+    </div>
+
+    <div class="section">
+      <h3>2.A popup will open where you have to select whether you want to manage orders or orders and inventory. We recommend choosing both so you can use the full suite of Fasteink features.</h3>
+      <img src="./step2.png">
+	 
+    </div>
+
+    <div class="section">
+      <h3>3. You can choose whether to import 1 week's worth of old orders or 1 month. In some cases, we may be able to import more if the sales channel allows, but you will need to get in touch with our support team first.</h3>
+       <img src="./step3.png">
+    </div>
+	
+	
+	<div class="section">
+      <h3>4. Add a name to your integration to be displayed in Fasteink.</h3>
+       <img src="./step4.png">
+    </div>
+	<div class="section">
+      <h3>5. If you have an IOSS number from your store you can add it here.</h3>
+       <img src="./step5.png">
+    </div>
+	<div class="section">
+      <h3>6. Choose what product types to import. These settings can be changed both during the initial integration and after.</h3>
+       <img src="./step6.png">
+    </div>
+	<div class="section">
+      <h3>7.Select whether you want your sold-out products to be automatically re-listed once product quantity is increased above 0. If the option is turned on and a product is sold out on Etsy, and you increase its stock back to a positive value, the product will be re-listed on the next inventory sync. If you wish to leave this on manual re-listing, then after you re-list the product on Etsy, you will need to go back into Fasteink to update its quantity to match that on your store.</h3>
+       <img src="./step7.png">
+    </div>
+	<div class="section">
+      <h3>8. Turn order shipped notifications email CC on or off. This affects only the confirmation emails that you would get, not the ones that your customers get.</h3>
+       <img src="./step8.png">
+    </div>
+	<div class="section">
+      <h3>9.A popup will appear where you have to sign in to your Etsy account:</h3>
+       <img src="./step9.png">
+    </div>
+	<div class="section">
+      <h3>10.After you sign in click on Allow Access button:</h3>
+       <img src="./step10.png">
+    </div>
+	
+	<div class="section">
+      <h3>11.You will now be redirected back to Fasteink. When you go to Integrations, you will find an Etsy store under the Connected Integrations:</h3>
+       <img src="./step11.png">
+	   <p>
+	   In the Status field inside the added Integration window, you should now see the status Import in progress. It might take up to 15-20 minutes to import your products depending on how many of them you have in your store.
+When the status changes to Live, that's it - integration has been connected successfully and products have finished importing.
+	   </p>
+    </div>
+	<div class="section">
+      <h3>Check Notifications for Import errors:</h3>
+      <p>After you have connected your Etsy store and you can see that your inventory has completed it's import, please go to the Errors & Notifications tab. In there click on the Notifications tab and you will be able to see if there were any products that Fasteink could not import.</p>
+       <img src="./step12.png">
+    </div>
+	
+	<div class="section">
+      <h3> Additional Integration Settings</h3>
+      <p>You can make further adjustments to your Etsy integration by clicking on one of the two icons you see at the top - centre of the integration menu.</p>
+       <img src="./step13.png">
+	   <p>Clicking on the the first icon allows you to upload a custom logo for your store, this can then be shown on your invoices.</p>
+	   <img src="./step14.png">
+	   <p>Clicking on the envelope icon brings up Return address, Phone & Email pre-fill settings.</p>
+	   <img src="./step15.png">
+	   <p>The Phone & Email settings allow you to pre-fill or overwrite telephone or email address on imported sales channel orders. You will not see it on the orders themselves, but this information will be used during shipping creation.</p>
+	   <img src="./step16.png">
+    
+	</div>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fasteink</span>
+                    </div>
+                    <p>Manage orders, print shipping labels, track inventory – all within OMS hub.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@fasteink.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (347) 248-6375</span>
+                        </div>
+                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>124 CEMETARY RD GASTONIA, NC 28056</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+						Company: Vogue Vibes LLC
+                        <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="./index.html#services">API Integration</a></li>
+                            <li><a href="./index.html#services">Data Migration</a></li>
+                            <li><a href="./index.html#services">Multi-Channel Management</a></li>
+                            <li><a href="./index.html#services">Custom Development</a></li>
+                            <li><a href="./index.html#services">Analytics & Reporting</a></li>
+                            <li><a href="./index.html#services">Support & Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Company</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">About Us</a></li> -->
+                            <!-- <li><a href="#">Our Team</a></li> -->
+                            <!-- <li><a href="#">Careers</a></li> -->
+                            <!-- <li><a href="#">Press Kit</a></li> -->
+                            <!-- <li><a href="#">Contact</a></li> -->
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Resources</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">Documentation</a></li> -->
+                            <!-- <li><a href="#">API Reference</a></li> -->
+                            <!-- <li><a href="#">Case Studies</a></li> -->
+                            <!-- <li><a href="#">Best Practices</a></li> -->
+                            <!-- <li><a href="#">FAQs</a></li> -->
+                            <!-- <li><a href="#">Status Page</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="./policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms of Service</a></li>
+                            <li><a href="./dataprocessing.html">Data Processing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 Fasteink. All rights reserved. 
+                    </div>
+                    <div class="footer-badges">
+                        <span>🔒 SSL Secured</span>
+                        <!-- <span>✅ GDPR Compliant</span> -->
+                        <!-- <span>⚡ 99.9% Uptime</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

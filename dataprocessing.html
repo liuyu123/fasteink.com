@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasteink - Manage orders, print shipping labels, track inventory – all within OMS hub.</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./icon (2).png" type="image/png" sizes="32x32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+	.header {
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(10px);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	}
+	.header .logo {
+		color: #2563EB;
+	}
+	.header .nav-link{
+		color: #6B7280;
+	}
+	 body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      <!-- max-width: 900px; -->
+      margin: 0 auto;
+      <!-- padding: 20px; -->
+      background: #f9f9f9;
+    }
+    .page-content h1,.page-content h2,.page-content h3 {
+      color: #213163;
+    }
+    .page-content h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #213163;
+      padding-bottom: 10px;
+    }
+    .page-content h2 {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+    .page-content h3 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .page-content ul {
+      margin: 10px 0 10px 20px;
+    }
+    .page-content p {
+      margin: 10px 0;
+    }
+    .page-content .section {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+	</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fasteink</span>
+                </div>
+                <nav class="nav" id="nav">
+					<a href="./index.html" class="nav-link">Home</a>
+                     <a href="./index.html#services" class="nav-link">Services</a>
+                    <a href="./index.html#process" class="nav-link">Process</a>
+                    <a href="./index.html#aboutapi" class="nav-link">About</a>
+                    <a href="./index.html#testimonials" class="nav-link">Expect</a>
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+	<section id="services" class="services">
+  <div class="container page-content">
+    <h1>Data Processing Policy – Fasteink</h1>
+    <p><strong>Scope:</strong> Covers the processing of store data and other customer information from connected e-commerce platforms.</p>
+
+    <div class="section">
+      <h2>1. Types of Data Processed</h2>
+      <ul>
+        <li>Store listings: title, price, inventory, SKU</li>
+        <li>Orders: order ID, items, shipping, customer-provided address</li>
+        <li>Store metadata: store ID, store name</li>
+        <li>Account information, billing, and support communications</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Purpose of Processing</h2>
+      <ul>
+        <li>Synchronize inventory and orders between your store and merchant systems</li>
+        <li>Generate reports and analytics to improve business performance</li>
+        <li>Enhance service reliability and user experience</li>
+        <li>Customer support and account management</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Legal Basis</h2>
+      <ul>
+        <li>Consent of the account holder</li>
+        <li>Legitimate interest in providing service, analytics, and operational support</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Storage & Retention</h2>
+      <ul>
+        <li>Data is stored securely in AWS (US-East-1)</li>
+        <li>Default retention period: 180 days</li>
+        <li>Users may request deletion or export of their data at any time via <a href="mailto:support@fasteink.com">support@fasteink.com</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Data Sharing</h2>
+      <ul>
+        <li>Shared only with third-party service providers under contract and bound by Data Processing Agreements (DPA)</li>
+        <li>No sale of user data to third parties</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>6. User Rights</h2>
+      <ul>
+        <li>Access, correction, deletion, and portability of your data</li>
+        <li>Revoke access for connected stores and applications at any time</li>
+        <li>Contact <a href="mailto:support@fasteink.com">support@fasteink.com</a> to exercise your rights</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>7. Changes to Policy</h2>
+      <p>We may update this policy periodically. Changes will be posted with the effective date, and continued use of our services constitutes acceptance of the updated policy.</p>
+    </div>
+
+  </div>
+</section>
+<!-- <section id="services" class="services"> -->
+	<!-- <div class="container page-content"> -->
+	  <!-- <h1>Data Processing Policy – Fasteink</h1> -->
+  <!-- <p><strong>Scope:</strong> Covers the processing of Etsy data and other customer information.</p> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>1. Types of Data Processed</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Etsy shop listings: title, price, inventory, SKU</li> -->
+      <!-- <li>Etsy orders: order ID, items, shipping, buyer-provided address</li> -->
+      <!-- <li>Etsy shop metadata: shop ID, shop name</li> -->
+      <!-- <li>Account information, billing, and support communications</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>2. Purpose of Processing</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Synchronize inventory and orders between Etsy and merchant systems</li> -->
+      <!-- <li>Generate reports and analytics</li> -->
+      <!-- <li>Improve service performance and reliability</li> -->
+      <!-- <li>Customer support and account management</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>3. Legal Basis</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Consent of the account holder (Etsy seller)</li> -->
+      <!-- <li>Legitimate interest in providing service and analytics</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>4. Storage & Retention</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Data stored in AWS (US-East-1)</li> -->
+      <!-- <li>Default retention: 180 days</li> -->
+      <!-- <li>Users may request deletion at any time via <a href="mailto:support@fasteink.com">support@fasteink.com</a></li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>5. Data Sharing</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Third-party service providers under contract only</li> -->
+      <!-- <li>Bound by Data Processing Agreements (DPA)</li> -->
+      <!-- <li>No sale of user data to third parties</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+  <!-- <div class="section"> -->
+    <!-- <h2>6. User Rights</h2> -->
+    <!-- <ul> -->
+      <!-- <li>Access, correction, deletion, and portability of data</li> -->
+      <!-- <li>Revoke OAuth access and disconnect Etsy shops</li> -->
+      <!-- <li>Contact <a href="mailto:support@fasteink.com">support@fasteink.com</a> to exercise rights</li> -->
+    <!-- </ul> -->
+  <!-- </div> -->
+
+	<!-- </div> -->
+<!-- </section>	 -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fasteink</span>
+                    </div>
+                    <p>Manage orders, print shipping labels, track inventory – all within OMS hub.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@fasteink.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (347) 248-6375</span>
+                        </div>
+                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>124 CEMETARY RD GASTONIA, NC 28056</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+						Company: Vogue Vibes LLC
+                        <!-- <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="./index.html#services">API Integration</a></li>
+                            <li><a href="./index.html#services">Data Migration</a></li>
+                            <li><a href="./index.html#services">Multi-Channel Management</a></li>
+                            <li><a href="./index.html#services">Custom Development</a></li>
+                            <li><a href="./index.html#services">Analytics & Reporting</a></li>
+                            <li><a href="./index.html#services">Support & Maintenance</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Company</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">About Us</a></li> -->
+                            <!-- <li><a href="#">Our Team</a></li> -->
+                            <!-- <li><a href="#">Careers</a></li> -->
+                            <!-- <li><a href="#">Press Kit</a></li> -->
+                            <!-- <li><a href="#">Contact</a></li> -->
+                            <!-- <li><a href="#">Blog</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <!-- <div class="footer-column"> -->
+                        <!-- <h4>Resources</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li><a href="#">Documentation</a></li> -->
+                            <!-- <li><a href="#">API Reference</a></li> -->
+                            <!-- <li><a href="#">Case Studies</a></li> -->
+                            <!-- <li><a href="#">Best Practices</a></li> -->
+                            <!-- <li><a href="#">FAQs</a></li> -->
+                            <!-- <li><a href="#">Status Page</a></li> -->
+                        <!-- </ul> -->
+                    <!-- </div> -->
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="./policy.html">Privacy Policy</a></li>
+                            <li><a href="./terms.html">Terms of Service</a></li>
+                            <!-- <li><a href="#">Cookie Policy</a></li> -->
+                            <li><a href="./dataprocessing.html">Data Processing</a></li>
+                            <!-- <li><a href="#">GDPR Compliance</a></li> -->
+                            <!-- <li><a href="#">Security</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 Fasteink. All rights reserved.
+                    </div>
+                    <div class="footer-badges">
+                        <span>🔒 SSL Secured</span>
+                        <!-- <span>✅ GDPR Compliant</span> -->
+                        <!-- <span>⚡ 99.9% Uptime</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+</body>
+</html>
