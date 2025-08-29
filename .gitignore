@@ -1,0 +1,6 @@
+.htaccess
+.user.ini
+.well-known
+/vender
+composer.json
+composer.lock
