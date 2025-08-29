@@ -1,6 +1,6 @@
 .htaccess
 .user.ini
 .well-known
-/vender
+/vendor
 composer.json
 composer.lock
