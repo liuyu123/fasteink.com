@@ -19,7 +19,7 @@ echo $state;
 echo "<br/>";
 echo $error;
 echo "<br/>";
-$code = 'cMp2rEmdmCFW134gyY-sJ9SFr5BMNB0ADD9EHIahvDbdBr8SItMPxyNPA_ife4or6KH5I91ZRh4rScPeuXXTVhPWHXeGls2DfdHQ';
+//$code = 'cMp2rEmdmCFW134gyY-sJ9SFr5BMNB0ADD9EHIahvDbdBr8SItMPxyNPA_ife4or6KH5I91ZRh4rScPeuXXTVhPWHXeGls2DfdHQ';
 
 $client = new Client($client_id);
 [$verifier, $code_challenge] = $client->generateChallengeCode();
