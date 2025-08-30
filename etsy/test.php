@@ -45,12 +45,12 @@ if ($user && isset($user->user_id)) {
 //    echo "listing:<br/>";
 //    print_r($listing);
 
-//    $receipt = \Etsy\Resources\Receipt::get($shop_id,2771149092);
-//    echo "receipt:<br/>";
-//    print_r($receipt);
-    $address = \Etsy\Resources\UserAddress::get(1137131569365);
-    echo "address:<br/>";
-    print_r($address);
+    $receipt = \Etsy\Resources\Receipt::get($shop_id,2771149092);
+    echo "receipt:<br/>";
+    print_r($receipt);
+//    $address = \Etsy\Resources\UserAddress::get(1137131569365);
+//    echo "address:<br/>";
+//    print_r($address);
 
 } else {
     echo "无法获取用户信息";
