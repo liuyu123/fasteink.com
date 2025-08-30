@@ -29,13 +29,16 @@ if ($user && isset($user->user_id)) {
     echo "shop_id: " . $shop_id . "<br/>";
     echo "shop_name: " . $shop_name . "<br/>";
     echo "shop_url: " . $shop_url . "<br/>";
-    $listing = \Etsy\Resources\Listing::get($shop_id);
+//    $listing = \Etsy\Resources\Listing::get($shop_id);
 //    echo "listing:<br/>";
 //    print_r($listing);
 
-    $receipt = \Etsy\Resources\Receipt::get($shop_id,2771149092);
-    echo "receipt:<br/>";
-    print_r($receipt);
+//    $receipt = \Etsy\Resources\Receipt::get($shop_id,2771149092);
+//    echo "receipt:<br/>";
+//    print_r($receipt);
+    $address = \Etsy\Resources\UserAddress::all();
+    echo "address:<br/>";
+    print_r($address);
 
 } else {
     echo "无法获取用户信息";
