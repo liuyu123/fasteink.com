@@ -39,15 +39,20 @@ echo "Refresh Token: " . $refresh_token . "<br/>";
 
 $etsy = new Etsy($client_id, $access_token);
 // Get the authenticated user.
+
+
 $user = User::me();
 
-// Get the users shop.
-$shop = $user->shop();
+print_r($user);
 
-print($user);
-echo "<br/>";
-print($shop);
-echo "<br/>";
+// 获取用户的 shop
+if ($user && isset($user->user_id)) {
+    $shop = User::getShop($user->user_id);
+    print_r($shop);
+} else {
+    echo "无法获取用户信息";
+}
+
 
 
 
