@@ -26,15 +26,17 @@ $client = new Client($client_id);
 $verifier = $_SESSION['verifier'];
 echo '$verifier:'.$verifier;
 echo "<br/>";
-[$access_token, $refresh_token] = $client->requestAccessToken(
+$tokens = $client->requestAccessToken(
     $redirect_uri,
     $code,
     $verifier
 );
-echo 'access_token:'.$access_token;
-echo "<br/>";
-echo 'refresh_token:'.$refresh_token;
-echo "<br/>";
+$access_token  = $tokens['access_token'] ?? null;
+$refresh_token = $tokens['refresh_token'] ?? null;
+
+echo "Access Token: " . $access_token . "<br/>";
+echo "Refresh Token: " . $refresh_token . "<br/>";
+
 $etsy = new Etsy($client_id, $access_token);
 // Get the authenticated user.
 $user = User::me();
@@ -50,13 +52,13 @@ echo "<br/>";
 
 
 
-// 2. 检查是否有错误
-if ($error) {
-    $error_description = isset($_GET['error_description']) ? $_GET['error_description'] : 'Unknown error';
-    die("Authorization failed: $error - $error_description");
-}
-
-// 3. 校验 state 防止 CSRF
-if (!isset($_SESSION['oauth2_state']) || $state !== $_SESSION['oauth2_state']) {
-    die("Invalid state parameter. Possible CSRF attack.");
-}
+//// 2. 检查是否有错误
+//if ($error) {
+//    $error_description = isset($_GET['error_description']) ? $_GET['error_description'] : 'Unknown error';
+//    die("Authorization failed: $error - $error_description");
+//}
+//
+//// 3. 校验 state 防止 CSRF
+//if (!isset($_SESSION['oauth2_state']) || $state !== $_SESSION['oauth2_state']) {
+//    die("Invalid state parameter. Possible CSRF attack.");
+//}

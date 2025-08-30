@@ -32,3 +32,6 @@ $url = $client->getAuthorizationUrl(
     $nonce
 );
 echo $url;
+// 跳转到 Etsy 授权页
+header("Location: $url");
+exit;
