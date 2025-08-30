@@ -5,16 +5,18 @@ use Etsy\Resources\User;
 
 session_start();
 $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
-$access_token = '453811509.3jDNXCxOZuvCHtqH38noQG08KuyCJVVTf5GaqNhPSz2Px_ZUIuaYCnMJrodWKVVQ_VOuWk-AsODQ2hwZUEq40qHOzA';
-$refresh_token = '453811509.ZIg0riIztplmf4hsOLAxj1bpsCTACexCQ-Vo_WkRBEK4J8z7U49ewuPINjiaFMINlrIO3FcxKG-_38aFdp1HrWPF49';
+//Access Token: 453811509.KKIeSCLcY3k1IROBtG6cWBhMORpBzFp8pJwQaiD4xrr31L_OVKeKNPb6fyn6VVk5QoHDnEMnvfrYOjd_YUKtHdLhms
+//Refresh Token: 453811509.bxEkXN7hrG1L4YOlshyBZqICV9tL_1UjvN4TYClW9h2e6-SqBDWPsdrCCPEmUBkQ3cX-fJ2oYQYp6JPalGKPgAfQfD
+$access_token = '453811509.KKIeSCLcY3k1IROBtG6cWBhMORpBzFp8pJwQaiD4xrr31L_OVKeKNPb6fyn6VVk5QoHDnEMnvfrYOjd_YUKtHdLhms';
+//$refresh_token = '453811509.bxEkXN7hrG1L4YOlshyBZqICV9tL_1UjvN4TYClW9h2e6-SqBDWPsdrCCPEmUBkQ3cX-fJ2oYQYp6JPalGKPgAfQfD';
 
-$client = new \Etsy\OAuth\Client($client_id);
-$tokens = $client->refreshAccessToken($refresh_token);
-
-$access_token  = $tokens['access_token'] ?? null;
-$refresh_token = $tokens['refresh_token'] ?? null;
-echo "Access Token: " . $access_token . "<br/>";
-echo "Refresh Token: " . $refresh_token . "<br/>";
+//$client = new \Etsy\OAuth\Client($client_id);
+//$tokens = $client->refreshAccessToken($refresh_token);
+//
+//$access_token  = $tokens['access_token'] ?? null;
+//$refresh_token = $tokens['refresh_token'] ?? null;
+//echo "Access Token: " . $access_token . "<br/>";
+//echo "Refresh Token: " . $refresh_token . "<br/>";
 
 $_SESSION['access_token'] = $access_token;
 
