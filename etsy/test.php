@@ -5,18 +5,18 @@ use Etsy\Resources\User;
 
 session_start();
 $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
-//Access Token: 453811509.S7pIWjk2qBBQOWlSpGy5Yiu3oRvnGddT710I8PFnGyOa5qe-EKBoY296QF05bPTy-RB8GK8HWTyjKVUsJ1l0rB8jrA
-//Refresh Token: 453811509.lLi3gLS9J9Q7YSIFfEehb8eJmyLyHAvmxChJlOFFIkDHXTFvjRD9tH8CoJckux67fNE9_j9kEC8BEqLhVSQkEjvK_s
-$access_token = '453811509.S7pIWjk2qBBQOWlSpGy5Yiu3oRvnGddT710I8PFnGyOa5qe-EKBoY296QF05bPTy-RB8GK8HWTyjKVUsJ1l0rB8jrA';
-$refresh_token = '453811509.lLi3gLS9J9Q7YSIFfEehb8eJmyLyHAvmxChJlOFFIkDHXTFvjRD9tH8CoJckux67fNE9_j9kEC8BEqLhVSQkEjvK_s';
+//Access Token: 453811509.r0CxY1FkDYqwn3EpM3oG0vk0gPULy8zniP2dhvl8rSKJr0w8XnAH8B_RnNe5Agw1m86SgDRirjMAca9m74UXr6grwg
+//Refresh Token: 453811509._8RKPkFhXGOsKI1HgpHXg_Q73VidcquhOFFWEIYIAR6l9f5HEuzVTduYTnZ320IelkED1h8unT9UXDygHD6pFUiQf8
+$access_token = '453811509.r0CxY1FkDYqwn3EpM3oG0vk0gPULy8zniP2dhvl8rSKJr0w8XnAH8B_RnNe5Agw1m86SgDRirjMAca9m74UXr6grwg';
+$refresh_token = '453811509._8RKPkFhXGOsKI1HgpHXg_Q73VidcquhOFFWEIYIAR6l9f5HEuzVTduYTnZ320IelkED1h8unT9UXDygHD6pFUiQf8';
 //
-$client = new \Etsy\OAuth\Client($client_id);
-$tokens = $client->refreshAccessToken($refresh_token);
-
-$access_token  = $tokens['access_token'] ?? null;
-$refresh_token = $tokens['refresh_token'] ?? null;
-echo "Access Token: " . $access_token . "<br/>";
-echo "Refresh Token: " . $refresh_token . "<br/>";
+//$client = new \Etsy\OAuth\Client($client_id);
+//$tokens = $client->refreshAccessToken($refresh_token);
+//
+//$access_token  = $tokens['access_token'] ?? null;
+//$refresh_token = $tokens['refresh_token'] ?? null;
+//echo "Access Token: " . $access_token . "<br/>";
+//echo "Refresh Token: " . $refresh_token . "<br/>";
 
 $_SESSION['access_token'] = $access_token;
 
@@ -45,8 +45,12 @@ if ($user && isset($user->user_id)) {
 //    $listing = \Etsy\Resources\Listing::get($shop_id);
 //    echo "listing:<br/>";
 //    print_r($listing);
-    //
-    $Buyers = \Etsy\Resources\BuyerTaxonomy::all();
+    //获取分类
+//    $Buyers = \Etsy\Resources\BuyerTaxonomy::all();
+//    echo "Buyers:<br/>";
+//    print_r($Buyers);
+    //获取分类属性
+    $Buyers = \Etsy\Resources\BuyerTaxonomyProperty::all(1);
     echo "Buyers:<br/>";
     print_r($Buyers);
 
