@@ -24,14 +24,18 @@ if ($user && isset($user->user_id)) {
 
     $shop_id = $shop->shop_id;
     $shop_name = $shop->shop_name;
-    $shop_url = $shop->shop_url;
+    $shop_url = $shop->url;
 
     echo "shop_id: " . $shop_id . "<br/>";
     echo "shop_name: " . $shop_name . "<br/>";
     echo "shop_url: " . $shop_url . "<br/>";
     $listing = \Etsy\Resources\Listing::get($shop_id);
-    echo "listing:<br/>";
-    print_r($listing);
+//    echo "listing:<br/>";
+//    print_r($listing);
+
+    $receipt = \Etsy\Resources\Receipt::all($shop_id);
+    echo "receipt:<br/>";
+    print_r($receipt);
 
 } else {
     echo "无法获取用户信息";
