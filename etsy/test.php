@@ -10,13 +10,13 @@ $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
 $access_token = '453811509.S7pIWjk2qBBQOWlSpGy5Yiu3oRvnGddT710I8PFnGyOa5qe-EKBoY296QF05bPTy-RB8GK8HWTyjKVUsJ1l0rB8jrA';
 $refresh_token = '453811509.lLi3gLS9J9Q7YSIFfEehb8eJmyLyHAvmxChJlOFFIkDHXTFvjRD9tH8CoJckux67fNE9_j9kEC8BEqLhVSQkEjvK_s';
 //
-//$client = new \Etsy\OAuth\Client($client_id);
-//$tokens = $client->refreshAccessToken($refresh_token);
-//
-//$access_token  = $tokens['access_token'] ?? null;
-//$refresh_token = $tokens['refresh_token'] ?? null;
-//echo "Access Token: " . $access_token . "<br/>";
-//echo "Refresh Token: " . $refresh_token . "<br/>";
+$client = new \Etsy\OAuth\Client($client_id);
+$tokens = $client->refreshAccessToken($refresh_token);
+
+$access_token  = $tokens['access_token'] ?? null;
+$refresh_token = $tokens['refresh_token'] ?? null;
+echo "Access Token: " . $access_token . "<br/>";
+echo "Refresh Token: " . $refresh_token . "<br/>";
 
 $_SESSION['access_token'] = $access_token;
 
