@@ -34,6 +34,9 @@ $tokens = $client->requestAccessToken(
 $access_token  = $tokens['access_token'] ?? null;
 $refresh_token = $tokens['refresh_token'] ?? null;
 
+//Access Token: 453811509.3jDNXCxOZuvCHtqH38noQG08KuyCJVVTf5GaqNhPSz2Px_ZUIuaYCnMJrodWKVVQ_VOuWk-AsODQ2hwZUEq40qHOzA
+//Refresh Token: 453811509.ZIg0riIztplmf4hsOLAxj1bpsCTACexCQ-Vo_WkRBEK4J8z7U49ewuPINjiaFMINlrIO3FcxKG-_38aFdp1HrWPF49
+
 echo "Access Token: " . $access_token . "<br/>";
 echo "Refresh Token: " . $refresh_token . "<br/>";
 
