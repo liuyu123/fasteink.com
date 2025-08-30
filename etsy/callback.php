@@ -1,5 +1,13 @@
 <?php
+require '../vendor/autoload.php';
 
+use Etsy\OAuth\Client;
+use Etsy\Etsy;
+use Etsy\Resources\User;
+
+
+$client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
+$redirect_uri = 'https://fasteink.com/etsy/callback.php';
 // 1. 获取回调参数
 $code  = isset($_GET['code']) ? $_GET['code'] : null;
 $state = isset($_GET['state']) ? $_GET['state'] : null;
@@ -11,6 +19,32 @@ echo $state;
 echo "<br/>";
 echo $error;
 echo "<br/>";
+$code = 'cMp2rEmdmCFW134gyY-sJ9SFr5BMNB0ADD9EHIahvDbdBr8SItMPxyNPA_ife4or6KH5I91ZRh4rScPeuXXTVhPWHXeGls2DfdHQ';
+
+$client = new Client($client_id);
+[$verifier, $code_challenge] = $client->generateChallengeCode();
+[$access_token, $refresh_token] = $client->requestAccessToken(
+    $redirect_uri,
+    $code,
+    $verifier
+);
+echo 'access_token:'.$access_token;
+echo "<br/>";
+echo 'refresh_token:'.$refresh_token;
+echo "<br/>";
+$etsy = new Etsy($client_id, $access_token);
+// Get the authenticated user.
+$user = User::me();
+
+// Get the users shop.
+$shop = $user->shop();
+
+print($user);
+echo "<br/>";
+print($shop);
+echo "<br/>";
+
+
 
 
 // 2. 检查是否有错误
