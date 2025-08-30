@@ -5,7 +5,7 @@ use Etsy\OAuth\Client;
 use Etsy\Etsy;
 use Etsy\Resources\User;
 
-
+session_start();
 $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
 $redirect_uri = 'https://fasteink.com/etsy/callback.php';
 // 1. 获取回调参数
@@ -22,7 +22,10 @@ echo "<br/>";
 //$code = 'cMp2rEmdmCFW134gyY-sJ9SFr5BMNB0ADD9EHIahvDbdBr8SItMPxyNPA_ife4or6KH5I91ZRh4rScPeuXXTVhPWHXeGls2DfdHQ';
 
 $client = new Client($client_id);
-[$verifier, $code_challenge] = $client->generateChallengeCode();
+//[$verifier, $code_challenge] = $client->generateChallengeCode();
+$verifier = $_SESSION['verifier'];
+echo '$verifier:'.$verifier;
+echo "<br/>";
 [$access_token, $refresh_token] = $client->requestAccessToken(
     $redirect_uri,
     $code,
