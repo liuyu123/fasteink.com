@@ -13,6 +13,8 @@ $tokens = $client->refreshAccessToken($refresh_token);
 
 $access_token  = $tokens['access_token'] ?? null;
 $refresh_token = $tokens['refresh_token'] ?? null;
+echo "Access Token: " . $access_token . "<br/>";
+echo "Refresh Token: " . $refresh_token . "<br/>";
 
 $_SESSION['access_token'] = $access_token;
 
