@@ -6,6 +6,14 @@ use Etsy\Resources\User;
 session_start();
 $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
 $access_token = '453811509.3jDNXCxOZuvCHtqH38noQG08KuyCJVVTf5GaqNhPSz2Px_ZUIuaYCnMJrodWKVVQ_VOuWk-AsODQ2hwZUEq40qHOzA';
+$refresh_token = '453811509.ZIg0riIztplmf4hsOLAxj1bpsCTACexCQ-Vo_WkRBEK4J8z7U49ewuPINjiaFMINlrIO3FcxKG-_38aFdp1HrWPF49';
+
+$client = new \Etsy\OAuth\Client($client_id);
+$tokens = $client->refreshAccessToken($refresh_token);
+
+$access_token  = $tokens['access_token'] ?? null;
+$refresh_token = $tokens['refresh_token'] ?? null;
+
 $_SESSION['access_token'] = $access_token;
 
 $etsy = new Etsy($client_id, $access_token);
