@@ -12,10 +12,14 @@ $scopes = \Etsy\Utils\PermissionScopes::ALL_SCOPES;
 [$verifier, $code_challenge] = $client->generateChallengeCode();
 $nonce = $client->createNonce();
 echo '1';
+echo "<br/>";
 echo '$code_challenge:'.$code_challenge;
+echo "<br/>";
 echo '$verifier:'.$verifier;
+echo "<br/>";
 echo '$nonce:'.$nonce;
-exit;
+echo "<br/>";
+//exit;
 
 $url = $client->getAuthorizationUrl(
     $redirect_uri,
@@ -23,3 +27,4 @@ $url = $client->getAuthorizationUrl(
     $code_challenge,
     $nonce
 );
+echo $url;
