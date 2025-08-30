@@ -53,10 +53,14 @@ if ($user && isset($user->user_id)) {
 //    $Buyers = \Etsy\Resources\BuyerTaxonomyProperty::all(1);
 //    echo "Buyers:<br/>";
 //    print_r($Buyers);
-//
-    $Buyers = \Etsy\Resources\HolidayPreference::all($shop_id);
-    echo "Buyers:<br/>";
-    print_r($Buyers);
+//  店铺休假模式
+//    $Buyers = \Etsy\Resources\HolidayPreference::all($shop_id);
+//    echo "Buyers:<br/>";
+//    print_r($Buyers);
+
+      $Buyers = \Etsy\Resources\LedgerEntry::all($shop_id);
+      echo "Buyers:<br/>";
+      print_r($Buyers);
 
 //    $receipt = \Etsy\Resources\Receipt::get($shop_id,2600454445);
 //    echo "receipt:<br/>";
