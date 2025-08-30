@@ -26,13 +26,13 @@ $etsy = new Etsy($client_id, $access_token);
 
 $user = User::me();
 echo "User:<br/>";
-print_r($user);
+//print_r($user);
 echo "userstop:<br/>";
 
 // 获取用户的 shop
 if ($user && isset($user->user_id)) {
     $shop = User::getShop($user->user_id);
-    print_r($shop);
+//    print_r($shop);
 
     $shop_id = $shop->shop_id;
     $shop_name = $shop->shop_name;
@@ -50,7 +50,11 @@ if ($user && isset($user->user_id)) {
 //    echo "Buyers:<br/>";
 //    print_r($Buyers);
     //获取分类属性
-    $Buyers = \Etsy\Resources\BuyerTaxonomyProperty::all(1);
+//    $Buyers = \Etsy\Resources\BuyerTaxonomyProperty::all(1);
+//    echo "Buyers:<br/>";
+//    print_r($Buyers);
+//
+    $Buyers = \Etsy\Resources\HolidayPreference::all($shop_id);
     echo "Buyers:<br/>";
     print_r($Buyers);
 
