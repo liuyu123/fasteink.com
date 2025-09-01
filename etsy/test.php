@@ -58,9 +58,13 @@ if ($user && isset($user->user_id)) {
 //    echo "Buyers:<br/>";
 //    print_r($Buyers);
 
-      $Buyers = \Etsy\Resources\LedgerEntry::all($shop_id);
-      echo "Buyers:<br/>";
-      print_r($Buyers);
+//      $Buyers = \Etsy\Resources\LedgerEntry::all($shop_id);
+//      echo "Buyers:<br/>";
+//      print_r($Buyers);
+
+    $Buyers = \Etsy\Resources\LedgerEntry::all($shop_id);
+    echo "Buyers:<br/>";
+    print_r($Buyers);
 
 //    $receipt = \Etsy\Resources\Receipt::get($shop_id,2600454445);
 //    echo "receipt:<br/>";

@@ -9,7 +9,8 @@ $client_id = 'dgb4cfdpd2rg2ic73r3yaqgr';
 $client = new Client($client_id);
 
 $redirect_uri = 'https://fasteink.com/etsy/callback.php';
-$scopes = \Etsy\Utils\PermissionScopes::ALL_SCOPES;
+//$scopes = \Etsy\Utils\PermissionScopes::ALL_SCOPES;
+$scopes = ["listings_d", "listings_r", "listings_w","transactions_r", "transactions_w"]
 [$verifier, $code_challenge] = $client->generateChallengeCode();
 $nonce = $client->createNonce();
 //和获取access_token使用$verifier保持一致
